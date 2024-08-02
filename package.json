@@ -1,25 +1,25 @@
 {
   "name": "ecommerce_website_mern",
   "version": "1.0.0",
-  "description": "eCommerce MERN Application\r Welcome to the eCommerce MERN application! This project demonstrates a fully functional online store built with the MERN stack, showcasing products, managing user interactions, and handling transactions.",
+  "description": "eCommerce MERN Application",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
-    "build": "webpack --mode production",
+    "build": "npm run build --prefix client",
     "test": "jest"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "concurrently": "^6.5.1",
+    "webpack": "^5.3.2",
     "jest": "^26.6.3",
-    "nodemon": "^2.0.22",
-    "webpack": "^5.3.2"
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
   },
   "keywords": [],
   "author": "",
